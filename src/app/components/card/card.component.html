@@ -1,0 +1,18 @@
+<div class="card">
+    <span [ngClass] = "{
+        opened: card.opened
+    }">{{ card.opened ? 'Aberto' : 'Fechado'}}</span>
+    <h3>{{card.title}}</h3>
+    <p [innerHTML]="card.content"></p>
+    <div class="divider"></div>
+    <p> Mascara: <span [ngClass]="{recomended: card.mask}">{{card.mask === 'recomended' ? 'Recomendada' : 'Nao recomendada'}}</span></p>
+    <p>Toalha: <span [ngClass]="{recomended: card.towel}">{{card.towel === 'recomended' ? 'Recomendada' : 'Nao recomendada'}}</span></p>
+    <p>Fonte: <span [ngClass]="{partial: card.fountain}"> {{card.fountain === 'partial' ? 'Parcial' : 'Nao recomendada'}} </span></p>
+    <p>Banheiro: <span [ngClass]="{not_recomended: card.locker_room}">{{card.locker_room === 'not_recomended' ? 'Parcial' : 'Nao recomendada'}}</span></p>
+    <ul>
+        <li *ngFor="let schedule of card.schedules">
+            <b> {{schedule.weekdays}}</b>
+            {{schedule.hour}}
+        </li>
+    </ul>
+</div>

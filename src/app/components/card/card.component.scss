@@ -1,0 +1,76 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 8px;
+    background-color: #e8e8e8;
+    border-radius: 8px;
+
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(51,51,51,0.15);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(51,51,51,0.15);
+    box-shadow: 1px 1px 1px 1px rgba(51,51,51,0.15);
+    gap:8px;
+
+    width: 250px;
+    height: 400px;
+}
+
+.card .divider{
+    height: 1px;
+    width: 90%;
+    background-color: var(--light-gray);
+}
+
+span{
+    font-weight: 700;
+    font-size: 14px;
+    color:var(--red)
+}
+span.opened{
+    color: var(--green);
+}
+
+h3{
+    font-weight: 700;
+    font-size: 24px;
+    color:var(--dark-gray);
+
+}
+
+p{
+    color: var(--light-gray);
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    color:var(--dark-gray);
+    font-weight: 500;
+    font-size: 12px
+}
+
+li b{
+    color:var(--dark-gray);
+    font-size: 16px;
+}
+
+
+span.not_recomended{
+    color:var(--red)
+}
+
+span.partial{
+    color:var(--yellow)
+}
+
+span.recomended{
+    color:var(--green)
+}

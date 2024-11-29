@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer .logo-container {
+    background-color: black;
+    padding: 24px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo-container img {
+    width: 100px;
+}
+
